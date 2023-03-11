@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3DPrints &mdash; Formulario</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="p-5">
+      <div class="container form-container px-5 py-4">
+        <h2 class="display-5 text-center">Formulario</h1>
+        <form action="./respuesta.html">
+          <!-- Nombres -->
+          <div class="mb-3">
+            <label for="firstNameInput" class="form-label">Nombres</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstNameInput"
+              required
+            />
+          </div>
+          <!-- Apellidos -->
+          <div class="mb-3">
+            <label for="lastNameInput" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="lastNameInput" required />
+          </div>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="emailInput" required />
+          </div>
+          <!-- Contraseña -->
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Contraseña</label>
+            <input
+              type="password"
+              class="form-control"
+              id="passwordInput"
+              aria-describedby="passwordHelp"
+              pattern="[0-9A-Za-z]{10,}"
+              required
+            />
+            <div class="form-text" id="passwordHelp">
+              La contraseña debe contener sólamente números y letras (mayúsculas o
+              minúsculas), con 10 caracteres como mínimo
+            </div>
+          </div>
+          <!-- Aceptar términos -->
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="disclaimer" required>
+            <label class="form-check-label" for="disclaimer">
+              Si se violan derechos de autor, acepto la total responsabilidad de los daños 
+              causados.
+            </label>
+          </div>
+          <!-- Ofrecer herramientas -->
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="offerTools">
+            <label class="form-check-label" for="offerTools">
+              Además de modelos, también ofrezco herramientas e impresiones.
+            </label>
+          </div>
+          <!-- Ciudad (dropdown) -->
+          <div class="mb-3">
+            <label for="cityInput" class="form-label">Ciudad</label>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle disabled"
+                href="#"
+                id="cityInput"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                
+              >
+                Seleccione su ciudad
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-target="#">Asunción</a></li>
+                <li><a class="dropdown-item" href="#">Caaguazú</a></li>
+                <li><a class="dropdown-item" href="#">Capiatá</a></li>
+                <li><a class="dropdown-item" href="#">Ciudad del Este</a></li>
+                <li><a class="dropdown-item" href="#">Concepción</a></li>
+                <li><a class="dropdown-item" href="#">Coronel Oviedo</a></li>
+                <li><a class="dropdown-item" href="#">Encarnación</a></li>
+                <li><a class="dropdown-item" href="#">Fernando de la Mora</a></li>
+                <li><a class="dropdown-item" href="#">Itá</a></li>
+                <li><a class="dropdown-item" href="#">Itaguá</a></li>
+                <li><a class="dropdown-item" href="#">Lambaré</a></li>
+                <li><a class="dropdown-item" href="#">Limpio</a></li>
+                <li><a class="dropdown-item" href="#">Luque</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Mariano Roque Alonzo</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Minga Guazú</a></li>
+                <li><a class="dropdown-item" href="#">Ñemby</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Pedro Juan Caballero</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Presidente Franco</a></li>
+                <li><a class="dropdown-item" href="#">San Lorenzo</a></li>
+                <li><a class="dropdown-item" href="#">Villa Elisa</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Botón Enviar (Primary)-->
+          <button type="submit" class="btn btn-send btn-primary me-4 disabled">Enviar</button>
+          <!-- Botón Cancelar (Danger)-->
+          <a type="button" class="btn btn-danger" href="./index.html">Cancelar</a>
+        </form>
+      </div>
+    </main>
+    <!-- POPPER AND JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+    <!-- MAIN-SCRIPT -->
+    <script src="./script.js"></script>
+  </body>
+</html>

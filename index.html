@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3DPrints &mdash; Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- NAVBAR -->
+      <header class="main-header">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+          <div class="container-fluid">
+            <img
+              src="./img/logo-sin-fondo.png"
+              alt="3DPrints Logo"
+              height="48px"
+              class="d-inline-block align-text-top"
+            />
+            <!-- Este botón es para la versión movil -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./mision.html">Misión</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#modelos-container">Modelos</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <button
+                  class="btn btn-primary me-2"
+                  type="submit"
+                  data-bs-toggle="modal"
+                  data-bs-target="#subscribe-modal"
+                >
+                  Iniciar sesión
+                </button>
+                <a href="./formulario.html" class="btn btn-secondary" type="submit">
+                  Registrarse
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- INICIO -->
+      <div
+        class="container-xxl hero-container d-flex align-items-center justify-content-center"
+      >
+        <h1 class="main-title">
+          TODO LO QUE PUEDAS IMAGINAR, NOSOTROS TE AYUDAMOS A HACERLO REALIDAD
+        </h1>
+      </div>
+      <!-- MODELOS -->
+      <div class="container-xxl modelos-container p-5" id="modelos-container">
+        <h2 class="secondary-title display-4 text-center">MODELOS POPULARES</h2>
+        <!-- CATEGORIA AUTOS -->
+        <div class="container category-container p-4">
+          <h3 class="category-title">Autos</h3>
+          <div class="container d-flex cards-container p-4 scrollbar">
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/autos/m3.jpg"
+                class="card-img-top"
+                alt="BMW M3 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">BMW M3</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/autos/charger.jpg"
+                class="card-img-top"
+                alt="Dodge Charger 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Dodge Charger</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/autos/f12.jpg"
+                class="card-img-top"
+                alt="Ferrari F12 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Ferrari F12</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/autos/mustang.jpg"
+                class="card-img-top"
+                alt="Ford Mustang 1967 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Ford Mustang 1967</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/autos/sls-amg.jpg"
+                class="card-img-top"
+                alt="Mercedes-Benz SLS AMG 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Mercedes-Benz SLS AMG</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/autos/taxi.jpg"
+                class="card-img-top"
+                alt="Taxi 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Taxi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORIA AVIONES -->
+        <div class="container category-container p-4">
+          <h3 class="category-title">Aviones</h3>
+          <div class="container d-flex cards-container p-4 scrollbar">
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/aviones/concorde.jpg"
+                class="card-img-top"
+                alt="Aérospatiale/Bac Concorde 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Aérospatiale/Bac Concorde</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/aviones/a220.jpg"
+                class="card-img-top"
+                alt="Airbus A220 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Airbus A220</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/aviones/an-225.jpg"
+                class="card-img-top"
+                alt="Antonov An-225 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Antonov An-225</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/aviones/crj700.jpg"
+                class="card-img-top"
+                alt="Bombardier CRJ700 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Bombardier CRJ700</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/aviones/comet.jpg"
+                class="card-img-top"
+                alt="De Havilland Comet 4 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">De Havilland Comet 4</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/aviones/dash-8.jpg"
+                class="card-img-top"
+                alt="De Havilland Dash 8 Q400 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">De Havilland Dash 8 Q400</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORIA BÉLICO -->
+        <div class="container category-container p-4">
+          <h3 class="category-title">Bélico</h3>
+          <div class="container d-flex cards-container p-4 scrollbar">
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/belico/acmat-4x4.jpg"
+                class="card-img-top"
+                alt="ACMAT VLRA 4x4 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">ACMAT VLRA 4x4</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/belico/tanque.jpg"
+                class="card-img-top"
+                alt="BMP-3 IFV 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">BMP-3 IFV</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/belico/camion-2.png"
+                class="card-img-top"
+                alt="HETS M1070 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">HETS M1070</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/belico/tanqueta-2.jpg"
+                class="card-img-top"
+                alt="ICV M1126 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">ICV M1126</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/belico/camion.jpg"
+                class="card-img-top"
+                alt="MTV M1084 6X6 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">MTV M1084 6X6</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/belico/tanqueta-2.jpg"
+                class="card-img-top"
+                alt="VBM FRECCIA 8X8 IFV 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">VBM FRECCIA 8X8 IFV</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORIA DINOS -->
+        <div class="container category-container p-4">
+          <h3 class="category-title">Dinosaurios</h3>
+          <div class="container d-flex cards-container p-4 scrollbar">
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/dinos/brontosaurus.jpg"
+                class="card-img-top"
+                alt="Brontosaurus 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Brontosaurus</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/dinos/plesiosaurus.jpg"
+                class="card-img-top"
+                alt="Plesiosaurus 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Plesiosaurus</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/dinos/spinosaurus.jpg"
+                class="card-img-top"
+                alt="Spinosaurus 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Spinosaurus</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/dinos/stegosaurus.jpg"
+                class="card-img-top"
+                alt="Stegosaurus 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Stegosaurus</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/dinos/triceratops.jpg"
+                class="card-img-top"
+                alt="Triceratops 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Triceratops</p>
+              </div>
+            </div>
+
+            <div class="card border-0" style="width: 250px">
+              <img
+                src="./img/dinos/velociraptor.jpg"
+                class="card-img-top"
+                alt="Velociraptor 3d model"
+              />
+              <div class="card-body">
+                <p class="card-text">Velociraptor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <footer class="container-xxl p-5">
+        <p class="info-text mt-3 text-muted text-center">
+          Acceda a 5000+ diseños. Tan solo
+          <a href="#" data-bs-toggle="modal" data-bs-target="#subscribe-modal"
+            >Inicie sesión</a
+          >
+          o <a href="./formulario.html">Regístrese</a>
+        </p>
+
+        <!-- Subscribe Modal -->
+        <div
+          class="modal fade text-primary"
+          id="subscribe-modal"
+          tabindex="-1"
+          aria-labelledby="iniciarSesion"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="iniciarSesion">Iniciar sesión</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <form class="p-4">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Usuario</label>
+                  <input type="text" class="form-control" id="username" />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="password" />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input text-center"
+                    id="remember-user"
+                  />
+                  <label class="form-check-label text-secondary for="remember-user"
+                    >Recuerdame</label
+                  >
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Logo -->
+        <a class="footer-logo" href="#">
+          <img
+            src="./img/logo-sin-fondo.png"
+            alt="3DPrints Logo"
+            class="mx-auto d-block"
+            width="300px"
+          />
+        </a>
+
+      </footer>
+    </div>
+    <!-- POPPER AND JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

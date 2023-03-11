@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Rubik+Dirt&display=swap");
+
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #929191;
+}
+
+/* NAVBAR */
+nav,
+.container-fluid {
+  background-color: #00406c;
+}
+
+/* INICIO */
+.hero-container {
+  background-image: url(./img/hero.png);
+  background-position: center;
+  height: calc(100vh - 63px);
+}
+
+.main-title {
+  max-width: 1050px;
+  text-align: center;
+  font-family: "Rubik Dirt", sans-serif;
+  font-size: 45px;
+  color: #fff;
+  text-shadow: 2px 2px 2px #696969;
+}
+
+/* MODELOS */
+.secondary-title {
+  font-weight: 600;
+}
+
+.modelos-container,
+.category-container {
+  background-color: #00406c;
+}
+
+.cards-container {
+  background-color: #001a2b;
+  gap: 1rem;
+  border-radius: 10px;
+  overflow-x: scroll;
+}
+
+.card {
+  min-width: 250px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #001a2c;
+}
+
+/* MISION */
+.mision-container,
+.response-container {
+  background-color: #3131319c;
+  border-radius: 12px;
+  color: #cfcece;
+}
+
+/* INICIAR SESIÓN */
+.modal-dialog {
+  width: 350px;
+}
+
+/* FORMULARIO REGISTRO */
+main {
+  background-color: #00406c;
+}
+.form-container {
+  background-color: #001523;
+  max-width: 900px;
+  border-radius: 12px;
+}
